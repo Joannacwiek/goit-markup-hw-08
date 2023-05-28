@@ -1,6 +1,8 @@
 @import "./utils/variables";
+@import "./utils/mixins.scss";
 @import "./utils/globals";
 @import "./components/header";
+@import "./components/mobile-menu.scss";
 @import "./components/logo";
 @import "./components/advantages";
 @import "./components/clients";
