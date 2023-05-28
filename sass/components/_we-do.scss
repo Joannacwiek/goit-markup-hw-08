@@ -1,0 +1,27 @@
+.we-do__list {
+  display: flex;
+  gap: 30px;
+}
+.we-do__item {
+  position: relative;
+  width: 370px;
+}
+.we-do__overlay {
+  position: absolute;
+  background-color: rgba(47, 48, 58, 0.8);
+  bottom: 0;
+  width: 370px;
+  padding: 27px;
+  flex-basis: calc((100% - 60px) / 3);
+}
+.we-do__image {
+  display: block;
+}
+.we-do__description {
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: center;
+  color: $textWhite;
+  font-family: $familyRoboto;
+  font-weight: $fontMedium;
+}

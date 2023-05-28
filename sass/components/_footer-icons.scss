@@ -1,0 +1,24 @@
+.footer__list-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.footer__item-icons {
+  border-radius: 50%;
+  background-color: $iconBackgroundFooter;
+  fill: $textWhite;
+  padding: 12px 12px;
+  border-radius: 50%;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $mainActive;
+    cursor: pointer;
+    fill: $textWhite;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

@@ -1,0 +1,158 @@
+.form {
+  padding: 40px;
+
+  &__title {
+    padding-bottom: 12px;
+    font-family: $familyRoboto;
+    font-weight: $fontMedium;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    color: $brandBlack;
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label {
+    margin-bottom: 4px;
+    font-family: $familyRoboto;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: $brand;
+  }
+
+  &__input {
+    border: 1px solid $borderInput;
+    border-radius: 4px;
+    height: 40px;
+    width: 100%;
+    padding-left: 42px;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+      outline: none;
+      border: 1px solid $mainActive;
+    }
+  }
+
+  &__input:focus + &__icon {
+    fill: $mainActive;
+  }
+
+  &__icon-position {
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  &__icon {
+    position: absolute;
+    fill: $iconForm;
+    top: 11px;
+    left: 12px;
+    width: 18px;
+    height: 18px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__comment {
+    border: 1px solid $borderInput;
+    border-radius: 4px;
+    resize: none;
+    height: 120px;
+    width: 100%;
+    padding: 12px;
+
+    &:focus {
+      outline: none;
+      border: 1px solid $mainActive;
+    }
+  }
+
+  &__comment::placeholder {
+    color: $textComment;
+    font-family: $familyRoboto;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    padding-right: 40px;
+  }
+
+  &__checkbox-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  &__checkbox-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $familyRoboto;
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.71;
+    color: $brand;
+  }
+
+  &__checkbox-custom {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid $brandBlack;
+    margin-right: 7px;
+    border-radius: 2px;
+  }
+
+  &__checkbox-icon {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    opacity: 0;
+    border-radius: 2px;
+  }
+
+  &__checkbox-hidden:checked + &__checkbox-custom > &__checkbox-icon {
+    opacity: 1;
+  }
+
+  .form__policy-link {
+    margin-left: 3px;
+    color: $mainActive;
+    user-select: none;
+  }
+
+  .form__button {
+    margin-top: 30px;
+    padding: 10px 52px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: $familyRoboto;
+    font-weight: $fontMedium;
+    font-size: 16px;
+    line-height: 1.85;
+    background: $mainActive;
+    box-shadow: 0px 4px 4px $boxShadowButtonForm;
+    border-radius: 4px;
+    border: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $textWhite;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,35 @@
+.contact__link {
+  color: $brand;
+  font-weight: $fontSmall;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    color: $mainActive;
+    transform: scale(1.1);
+  }
+  &:active {
+    color: $mainActive;
+  }
+}
+
+.contact__set {
+  fill: $brand;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: $mainActive;
+    cursor: pointer;
+  }
+  &:active {
+    fill: $mainActive;
+    cursor: pointer;
+  }
+}

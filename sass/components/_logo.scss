@@ -1,0 +1,16 @@
+.logo {
+  font-family: $familyRaleway;
+  font-weight: $fontMedium;
+  font-size: 26px;
+  line-height: 1.19;
+  color: $mainActive;
+  text-decoration: none;
+
+  &--black {
+    color: #000;
+  }
+
+  &--white {
+    color: #fff;
+  }
+}
